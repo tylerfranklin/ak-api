@@ -4,7 +4,7 @@
   "description": "async-kit API server toolkit",
   "main": "index.js",
   "scripts": {
-    "test": "mocha spec"
+    "test": "ts-mocha -p tsconfig.json spec/index.ts"
   },
   "repository": {
     "type": "git",
@@ -25,13 +25,18 @@
   },
   "homepage": "https://github.com/async-kit/ak-api#readme",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^2.4.5"
+    "@types/expect": "^24.3.0",
+    "@types/mocha": "^8.0.0",
+    "chai": "^3.5.0"
   },
   "dependencies": {
     "glob": "^6.0.4",
     "highland": "^2.6.0",
-    "restify": "^8.5.1"
+    "mocha": "^8.0.1",
+    "restify": "^8.5.1",
+    "ts-mocha": "^7.0.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.7"
   },
   "peerDependencies": {
     "restify": "^4.0.3"
